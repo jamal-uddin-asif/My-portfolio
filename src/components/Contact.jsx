@@ -19,6 +19,7 @@ export default function Contact() {
                 </div>
                 <div className="flex flex-1 flex-col items-center justify-center p-4">
                     <div className="flex w-full max-w-md flex-col items-center">
+                            <h1 className=" text-3xl text-primary mb-3">Contact me</h1>
                         <div className="flex w-full flex-col gap-2">
                             <div
                                 className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
@@ -40,7 +41,7 @@ export default function Contact() {
                                         <p
                                             className="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
                                         >
-                                            hello@developer.com
+                                           asifzehendmg@gmail.com
                                         </p>
                                     </div>
                                 </div>
@@ -74,7 +75,7 @@ export default function Contact() {
                                         <p
                                             className="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
                                         >
-                                            +1 (234) 567-8900
+                                            01610990018
                                         </p>
                                     </div>
                                 </div>
@@ -115,7 +116,7 @@ export default function Contact() {
                                         <p
                                             className="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
                                         >
-                                            +1 (234) 567-8900
+                                            01610990018
                                         </p>
                                     </div>
                                 </div>
@@ -154,7 +155,7 @@ export default function Contact() {
                             </a>
                             <a
                                 className="flex h-14 w-14 items-center justify-center rounded-xl bg-zinc-100 text-zinc-600 dark:bg-zinc-800/40 dark:text-zinc-300"
-                                href=""
+                                href="https://github.com/jamal-uddin-asif"
                             >
                                 <svg
                                     className="h-6 w-6"

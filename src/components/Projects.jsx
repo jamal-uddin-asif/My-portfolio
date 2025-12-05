@@ -11,24 +11,32 @@ export default function Projects() {
                 "https://i.ibb.co.com/KxVKrnnN/The-book-haven.png",
             details:
                 "A simple web application where users can add books, view details,delete and edit books. ",
-                Challenges: 'Book Haven challenged me to optimize data handling, implement dynamic filtering, and keep the interface fast and responsive. Integrating authentication and managing state across multiple components also tested my skills.',
-            tech: ["React",'Tailwindcss', "Node.js", "MongoDB", "Express",],
-            improvements:'I want to improve overall performance by optimizing queries and adding smarter search functionalities. In the future, I plan to introduce wishlist syncing, user profiles, and better accessibility support.'
+            Challenges: 'Book Haven challenged me to optimize data handling, implement dynamic filtering, and keep the interface fast and responsive. Integrating authentication and managing state across multiple components also tested my skills.',
+            tech: ["React", 'Tailwindcss', "Node.js", "MongoDB", "Express",'firebase',],
+          
+            githubLink: "https://github.com/jamal-uddin-asif/The-Book-Haven-Client-",
+            liveLink: "https://the-book-haven12.netlify.app/"
         },
         {
             title: "Toys World",
             image:
-'https://i.ibb.co.com/QjcKhGb2/toysworld-Portfolio.png',
+                'https://i.ibb.co.com/QjcKhGb2/toysworld-Portfolio.png',
             details:
-                "An interactive data dashboard for visualizing complex datasets. Built using D3.js and React, it allows users to filter, sort, and export data in various formats.",
-            tech: ["React", "D3.js", "Firebase"],
+                "A simple web application where users can explore toys, view details,search and sort by price toys.",
+                Challenges:'Building the Toys World app required optimizing search and sort features to handle various toy categories smoothly. Ensuring fast performance while maintaining a clean and responsive UI was a key challenge.',
+            tech: ["React", "tailwindcss", "firebase", 'react router',],
+  githubLink: "https://github.com/jamal-uddin-asif/Toys-World",
+            liveLink: "https://toys-world.netlify.app/"
         },
         {
-            title: "Mobile Banking App",
-            image:'https://i.ibb.co.com/2fbPZvb/heroapp-Porfolio.png',
-                 details:
-                "A secure and user-friendly mobile banking application. It provides real-time transaction updates, fund transfers, and bill payments. Built with React Native.",
-            tech: ["React Native", "Redux", "Node.js"],
+            title: "Hero Apps",
+            image: 'https://i.ibb.co.com/2fbPZvb/heroapp-Porfolio.png',
+            details:
+                "A web application for apps .User can install a app and see details of any app, user can uninstall their apps",
+                Challenges:'Hero Apps is a smart app management platform where users can explore apps, view detailed information, and install or uninstall them effortlessly. It features a fast real-time search system that helps users quickly find the apps they need. Designed with a clean and modern UI, it ensures a smooth and intuitive app-browsing experience.',
+            tech: ["React ", "tailwindcss", "React router"],
+            githubLink: "https://github.com/jamal-uddin-asif/Hero-Apps",
+            liveLink: "https://hero-io-222.netlify.app/"
         },
     ];
 
@@ -38,17 +46,7 @@ export default function Projects() {
             className="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200"
         >
             <div className="flex flex-col ">
-                <header className="p-6">
-                    <nav className="flex justify-between items-center">
-                        <div className="font-bold text-lg text-slate-900 dark:text-white">
-                            <span>LucaDCZ</span>
-                            <span className="text-primary">.</span>
-                        </div>
-                        <button className="flex items-center justify-center h-10 w-10 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-900 dark:text-white">
-                            <span className="material-icons text-xl">menu</span>
-                        </button>
-                    </nav>
-                </header>
+
                 <main className="flex-grow px-6 py-8">
                     <div className="space-y-12">
                         <section>
@@ -108,10 +106,28 @@ export default function Projects() {
                                 className="w-full h-56 object-cover"
                             />
                             <div className="p-6">
+                                <div className="flex justify-between items-center">
+
                                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
                                     {selectedProject.title}
                                 </h2>
-                                
+                                <button
+                                    onClick={() => setSelectedProject(null)}
+                                    className="p-2 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                                >
+                                    Close
+                                </button>
+                                </div>
+                                <div>
+                                    <div>
+                                        
+                                <button className="bg-primary p-2 rounded-xl"><a href={selectedProject.liveLink}>Live Link</a></button>
+                                <button className="bg-primary p-2 rounded-xl ml-2 mb-2"><a href={selectedProject.githubLink}>Github Link</a></button>
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                </div>
                                 <p className="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
                                     {selectedProject.details}
                                 </p>
@@ -131,12 +147,6 @@ export default function Projects() {
                                         </span>
                                     ))}
                                 </div>
-                                <button
-                                    onClick={() => setSelectedProject(null)}
-                                    className="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
-                                >
-                                    Close
-                                </button>
                             </div>
                         </motion.div>
                     </motion.div>

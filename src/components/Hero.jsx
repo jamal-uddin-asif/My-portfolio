@@ -49,7 +49,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="text-5xl sm:text-6xl font-black leading-tight text-slate-900 dark:text-white"
+                className="text-4xl sm:text-6xl font-black leading-tight text-slate-900 dark:text-white"
             >
                 <span className="text-primary">MERN stack</span>
                 <span>Developer</span>
