@@ -52,7 +52,7 @@ export default function Hero() {
                 className="text-4xl sm:text-6xl font-black leading-tight text-slate-900 dark:text-white"
             >
                 <span className="text-primary">MERN stack</span>
-                <span>Developer</span>
+                <span> Developer</span>
             </motion.h1>
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export default function Hero() {
                 transition={{ delay: 0.6, duration: 0.5 }}
                 className="mt-4 max-w-md text-slate-600 dark:text-slate-400 text-lg"
             >
-                I'm a MERN stack developer based in Italy, I'll help you build beautiful
+                I'm a MERN stack developer based in Bangladesh, I'll help you build beautiful
                 websites your users will love.
             </motion.p>
             <motion.div
@@ -74,7 +74,7 @@ export default function Hero() {
                     href="/resume.pdf"
                     download='resume.pdf'
                 >
-                    Resume Download
+                    Download Resume
                 </a>
                 {/* <a
                     className="w-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold py-3 px-6 rounded-lg shadow-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
