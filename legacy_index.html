@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mobile Portfolio Homepage</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6D28D9",
+              "background-light": "#FFFFFF",
+              "background-dark": "#18181B",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="flex flex-col min-h-screen">
+      <header class="p-6">
+        <nav class="flex justify-between items-center">
+          <div class="font-bold text-lg text-slate-900 dark:text-white">
+            <span>LucaDCZ</span><span class="text-primary">.</span>
+          </div>
+          <button
+            class="flex items-center justify-center h-10 w-10 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-900 dark:text-white"
+          >
+            <span class="material-icons text-xl">menu</span>
+          </button>
+        </nav>
+      </header>
+      <main class="flex-grow flex flex-col justify-center px-6">
+        <div class="flex flex-col items-center text-center">
+          <div class="relative w-48 h-48 sm:w-56 sm:h-56 mb-8">
+            <div
+              class="absolute inset-0 rounded-full border-2 border-primary/30 animate-pulse"
+            ></div>
+            <img
+              alt="A black and white profile photo of Luca, looking up and to the side."
+              class="w-full h-full object-cover rounded-full p-2"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhKB1HdHKT_re44KX0O44_axTbIjfWUTbhq0oKb1BN656bRo4yoG47MGNSLTCE9eb1zxdJuMKXb6xSAct_ph_An9_IjVA6DTl2tKE2W0Y7m-jqyc5l2o-Dc7UAFCgpujTrlwOXF3zlWlf26hhl0xy_Qy9CB9Pfgq0LzzU80uhnkkDkOMIe9-d2g_i3AtWxF4K4e2OoUyJVoD6imU4KjzCvX0H2hFA0-uXZS2i_1wOQsqtxb9x8msNJ015Pt0Yv31-r_fnD2YKVQCQ"
+            />
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 mb-2">
+            Hey, I'm Jamal Uddin Asif 👋
+          </p>
+          <h1
+            class="text-5xl sm:text-6xl font-black leading-tight text-slate-900 dark:text-white"
+          >
+            <span class="text-primary">MERN stack</span>
+            <span>Developer</span>
+          </h1>
+          <p class="mt-4 max-w-md text-slate-600 dark:text-slate-400 text-lg">
+            I'm a MERN stack developer based in Italy, I'll help you build
+            beautiful websites your users will love.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4 w-full max-w-xs">
+            <a
+              class="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold py-3 px-6 rounded-lg shadow-md hover:opacity-90 transition-opacity"
+              href="#"
+            >
+              Get In Touch
+            </a>
+            <a
+              class="w-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold py-3 px-6 rounded-lg shadow-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+              href="#"
+            >
+              Browse Projects
+            </a>
+          </div>
+        </div>
+
+        <!-- about me section  -->
+        <section
+          class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200"
+        >
+          <div class="flex flex-col min-h-screen">
+            <header class="p-6">
+              <nav class="flex justify-between items-center">
+                <div
+                  class="font-bold text-lg text-slate-900 dark:text-white"
+                ></div>
+                <button
+                  class="flex items-center justify-center h-10 w-10 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-900 dark:text-white"
+                >
+                  <span class="material-icons text-xl">menu</span>
+                </button>
+              </nav>
+            </header>
+            <div class="flex-grow px-6 py-8">
+              <div class="space-y-12">
+                <section>
+                  <h1
+                    class="text-4xl font-black text-slate-900 dark:text-white mb-4"
+                  >
+                    About Me<span class="text-primary">.</span>
+                  </h1>
+                  <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    I'm a passionate frontend developer with a knack for
+                    creating engaging and user-friendly web experiences. With 3+
+                    years in the field, I've honed my skills in turning complex
+                    problems into beautiful, intuitive designs. I thrive on
+                    collaboration and am always eager to learn new technologies
+                    to push the boundaries of what's possible on the web.
+                  </p>
+                </section>
+                <section>
+                  <h2
+                    class="text-2xl font-bold text-slate-900 dark:text-white mb-6"
+                  >
+                    My Skills
+                  </h2>
+                  <div class="space-y-6">
+                    <div>
+                      <h3
+                        class="font-semibold text-slate-700 dark:text-slate-300 mb-3"
+                      >
+                        Languages
+                      </h3>
+                      <div class="flex flex-wrap gap-2">
+                        <span
+                          class="bg-primary/10 text-primary font-medium text-sm px-3 py-1 rounded-full"
+                          >HTML</span
+                        >
+                        <span
+                          class="bg-primary/10 text-primary font-medium text-sm px-3 py-1 rounded-full"
+                          >CSS</span
+                        >
+                        <span
+                          class="bg-primary/10 text-primary font-medium text-sm px-3 py-1 rounded-full"
+                          >JavaScript</span
+                        >
+                        <span
+                          class="bg-primary/10 text-primary font-medium text-sm px-3 py-1 rounded-full"
+                          >TypeScript</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <h3
+                        class="font-semibold text-slate-700 dark:text-slate-300 mb-3"
+                      >
+                        Frameworks &amp; Libraries
+                      </h3>
+                      <div class="flex flex-wrap gap-2">
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >React</span
+                        >
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Next.js</span
+                        >
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Vue</span
+                        >
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Tailwind CSS</span
+                        >
+                      </div>
+                    </div>
+                    <div>
+                      <h3
+                        class="font-semibold text-slate-700 dark:text-slate-300 mb-3"
+                      >
+                        Tools &amp; Platforms
+                      </h3>
+                      <div class="flex flex-wrap gap-2">
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Git &amp; GitHub</span
+                        >
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Figma</span
+                        >
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Vercel</span
+                        >
+                        <span
+                          class="bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-3 py-1 rounded-full"
+                          >Jira</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <h2
+                    class="text-2xl font-bold text-slate-900 dark:text-white mb-4"
+                  >
+                    Philosophy
+                  </h2>
+                  <div
+                    class="bg-slate-100 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800"
+                  >
+                    <p
+                      class="italic text-slate-600 dark:text-slate-400 leading-relaxed"
+                    >
+                      "I believe that the best digital products are born from a
+                      deep understanding of user needs, a commitment to clean,
+                      maintainable code, and a touch of creative magic. My goal
+                      is to not just build websites, but to craft experiences
+                      that are both functional and delightful."
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- project section  -->
+        <section
+          class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200"
+        >
+          <div class="flex flex-col min-h-screen">
+            <header class="p-6">
+              <nav class="flex justify-between items-center">
+                <div class="font-bold text-lg text-slate-900 dark:text-white">
+                  <span>LucaDCZ</span><span class="text-primary">.</span>
+                </div>
+                <button
+                  class="flex items-center justify-center h-10 w-10 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-900 dark:text-white"
+                >
+                  <span class="material-icons text-xl">menu</span>
+                </button>
+              </nav>
+            </header>
+            <main class="flex-grow px-6 py-8">
+              <div class="space-y-12">
+                <section>
+                  <h1
+                    class="text-4xl font-black text-slate-900 dark:text-white mb-8"
+                  >
+                    Projects<span class="text-primary">.</span>
+                  </h1>
+                  <div
+                    class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3"
+                  >
+                    <div
+                      class="bg-white dark:bg-slate-800/50 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col"
+                    >
+                      <img
+                        alt="E-commerce Platform Project Image"
+                        class="w-full h-48 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuANSKnvEqSC2Vm6mm2z0TwpwtLgJz4AG-HGrvJW7oF11kHkN9RVidRtcT2VQOd5lb6isEZS9hpasDybe8M4vMFL8qMyDwr8RBCeWzYpJzHqH6iuivImj3rKJJXDXzKhCSXqotCeLNyN35NB2QI99CEndnQ7cD4Ukr1oihykLcv7ihGPb9oCWi4QR_wIJhvbHyLSbK2q301WetQEjOpNf6EBH7dtGk5_gjCj8pUl7qHV7a21jANQmsqg9u1_XJUIALGnqsFCejKSNBE"
+                      />
+                      <div class="p-6 flex flex-col flex-grow">
+                        <h2
+                          class="text-xl font-bold text-slate-900 dark:text-white mb-2 flex-grow"
+                        >
+                          E-commerce Platform
+                        </h2>
+                        <button
+                          class="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md text-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors mt-4"
+                        >
+                          View Details
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white dark:bg-slate-800/50 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col"
+                    >
+                      <img
+                        alt="Data Dashboard Project Image"
+                        class="w-full h-48 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1p4o_yHwLAJKzHFobIsn5wSLxvdJDi56gPv9hrQGJyI--41Qn4K4mE73dc4MCmpcA57jOzsq_2ViAanTPmfQxi3-Ijg95P2N_DFEv_qmqTDEFgTFVAeVWcpq2PBlN3LwtabnLD0LDwQIDwmVmP_Ya0y3x8PfePv7lF2-2fmS3Vib3jZFNffnnNpHyHjsQFYu2Y7to4ibYgaaffkwx_qARYa7VfI8chIug4tFRo7SKJzSHAq1WpOHbNW6cpHSZcbxR3F3OgCmmIxs"
+                      />
+                      <div class="p-6 flex flex-col flex-grow">
+                        <h2
+                          class="text-xl font-bold text-slate-900 dark:text-white mb-2 flex-grow"
+                        >
+                          Data Dashboard
+                        </h2>
+                        <button
+                          class="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md text-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors mt-4"
+                        >
+                          View Details
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white dark:bg-slate-800/50 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col"
+                    >
+                      <img
+                        alt="Mobile Banking App Project Image"
+                        class="w-full h-48 object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbOLWRaKVn72JfASNNJG4djPSkfeb3PxzuyYymSRJlW2hEgbrG9_zWTbA0Dz0qzSeo_mBXFepMrdCa7t3zBXPGarmbK_xRI85eQkUFCrkzAJY_smsexTChspOrWIxzkt3cZNG5Mxwxqoxc6V-jFV5wuNTesdutHIOdy6-pawbhYP_EjfJNj6HFcca0zKJB4DRn7lkTiZl-hgOnoojKdtFL7K4eHY37Jq0eOpWIaIM5X83wkZpLVYZVZxtBOs4SkWAKYf_drEDBlCg"
+                      />
+                      <div class="p-6 flex flex-col flex-grow">
+                        <h2
+                          class="text-xl font-bold text-slate-900 dark:text-white mb-2 flex-grow"
+                        >
+                          Mobile Banking App
+                        </h2>
+                        <button
+                          class="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md text-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors mt-4"
+                        >
+                          View Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </main>
+          </div>
+        </section>
+
+        <!-- contact section  -->
+        <section class="font-display">
+          <div
+            class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden"
+          >
+            <div
+              class="flex items-center p-4 pb-2 justify-between bg-background-light dark:bg-background-dark"
+            >
+              <div
+                class="flex size-12 shrink-0 items-center text-zinc-900 dark:text-white"
+              ></div>
+              <h2
+                class="flex-1 text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white"
+              ></h2>
+              <div class="flex size-12 shrink-0 items-center"></div>
+            </div>
+            <div class="flex flex-1 flex-col items-center justify-center p-4">
+              <div class="flex w-full max-w-md flex-col items-center">
+                <div class="flex w-full flex-col gap-2">
+                  <div
+                    class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="flex items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0 size-12"
+                      >
+                        <span class="material-symbols-outlined text-2xl"
+                          >mail</span
+                        >
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p
+                          class="text-base font-medium leading-normal line-clamp-1 text-zinc-900 dark:text-white"
+                        >
+                          Email
+                        </p>
+                        <p
+                          class="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
+                        >
+                          hello@developer.com
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shrink-0">
+                      <div
+                        class="flex size-7 items-center justify-center text-zinc-500 dark:text-zinc-400"
+                      >
+                        <span class="material-symbols-outlined text-2xl"
+                          >chevron_right</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="flex items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0 size-12"
+                      >
+                        <span class="material-symbols-outlined text-2xl"
+                          >phone</span
+                        >
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p
+                          class="text-base font-medium leading-normal line-clamp-1 text-zinc-900 dark:text-white"
+                        >
+                          Phone
+                        </p>
+                        <p
+                          class="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
+                        >
+                          +1 (234) 567-8900
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shrink-0">
+                      <div
+                        class="flex size-7 items-center justify-center text-zinc-500 dark:text-zinc-400"
+                      >
+                        <span class="material-symbols-outlined text-2xl"
+                          >chevron_right</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="flex items-center justify-center rounded-lg bg-primary/20 text-primary shrink-0 size-12"
+                      >
+                        <svg
+                          class="w-6 h-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.04 2C6.58 2 2.15 6.43 2.15 11.89C2.15 13.84 2.73 15.68 3.75 17.24L2.46 21.54L6.92 20.25C8.43 21.18 10.18 21.78 12.04 21.78C17.5 21.78 21.93 17.35 21.93 11.89C21.93 6.43 17.5 2 12.04 2ZM17.11 15.54C16.89 16.03 15.65 16.64 15.22 16.69C14.79 16.74 14.22 16.76 13.78 16.59C13.34 16.41 12.39 16.1 11.3 15.13C9.97 13.91 9.05 12.44 8.85 11.96C8.65 11.48 8.79 11.11 8.95 10.95C9.09 10.81 9.27 10.59 9.45 10.41C9.6 10.26 9.66 10.14 9.78 9.9C9.91 9.66 9.85 9.45 9.75 9.25C9.65 9.05 9.11 7.7 8.89 7.19C8.67 6.68 8.44 6.75 8.27 6.74C8.11 6.73 7.84 6.73 7.59 6.73C7.34 6.73 7.01 6.8 6.73 7.07C6.46 7.34 5.89 7.85 5.89 8.93C5.89 10.01 6.76 11.03 6.88 11.18C7 11.33 9.02 14.49 12.07 15.86C14.13 16.78 15.1 16.66 15.75 16.6C16.42 16.52 17.33 16.12 17.55 15.63C17.77 15.14 17.77 14.76 17.7 14.63C17.63 14.5 17.43 14.41 17.21 14.31C16.99 14.21 16.12 13.78 15.9 13.7C15.68 13.62 15.53 13.58 15.38 13.82C15.23 14.06 14.88 14.48 14.76 14.63C14.64 14.78 14.52 14.82 14.3 14.74C14.08 14.66 13.25 14.39 12.23 13.48C11.41 12.75 10.84 11.85 10.66 11.53C10.48 11.21 10.63 11.05 10.77 10.91C10.9 10.79 11.04 10.64 11.18 10.49C11.32 10.34 11.37 10.23 11.47 10.03C11.57 9.83 11.52 9.65 11.45 9.53C11.38 9.41 10.87 8.16 10.67 7.68C10.47 7.2 10.27 7.25 10.12 7.24H10.11C10.11 7.24 9.93 7.24 9.77 7.24C9.61 7.24 9.38 7.28 9.21 7.42C9.03 7.56 8.52 8.01 8.52 8.53C8.52 9.05 8.7 9.55 8.84 9.77C8.98 9.99 9.21 10.33 9.21 10.35C9.21 10.37 9.35 10.59 9.35 10.59C9.35 10.59 9.75 11.2 9.85 11.3C9.95 11.4 10.77 12.38 11.96 13.29C12.56 13.75 13.31 14.18 13.88 14.43C14.28 14.61 14.64 14.7 14.94 14.7C15.26 14.7 16.33 14.16 16.5 13.56C16.67 12.96 16.69 12.21 16.69 12.11C16.69 11.99 16.69 11.83 16.89 11.83C17.09 11.83 17.11 12.9 17.11 13C17.11 13.1 17.11 15.05 17.11 15.54Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p
+                          class="text-base font-medium leading-normal line-clamp-1 text-zinc-900 dark:text-white"
+                        >
+                          WhatsApp
+                        </p>
+                        <p
+                          class="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
+                        >
+                          +1 (234) 567-8900
+                        </p>
+                      </div>
+                    </div>
+                    <div class="shrink-0">
+                      <div
+                        class="flex size-7 items-center justify-center text-zinc-500 dark:text-zinc-400"
+                      >
+                        <span class="material-symbols-outlined text-2xl"
+                          >chevron_right</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4
+                  class="py-6 text-sm font-bold leading-normal tracking-[0.015em] text-center text-zinc-500 dark:text-zinc-400"
+                >
+                  Find me on
+                </h4>
+                <div class="flex items-center justify-center gap-6">
+                  <a
+                    class="flex h-14 w-14 items-center justify-center rounded-xl bg-zinc-100 text-zinc-600 dark:bg-zinc-800/40 dark:text-zinc-300"
+                    href="#"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      data-alt="LinkedIn logo"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.447 20.452H17.13V14.93C17.13 13.69 17.106 12.067 15.41 12.067C13.715 12.067 13.438 13.437 13.438 14.838V20.452H10.12V9.048H13.287V10.5H13.333C13.785 9.688 14.843 8.783 16.438 8.783C19.825 8.783 20.447 11.05 20.447 14.173V20.452ZM6.877 7.427C5.973 7.427 5.25 6.702 5.25 5.8C5.25 4.898 5.973 4.173 6.877 4.173C7.78 4.173 8.503 4.898 8.503 5.8C8.503 6.702 7.78 7.427 6.877 7.427ZM8.528 20.452H5.226V9.048H8.528V20.452ZM22.453 0H1.54C.688 0 0 .688 0 1.54V22.46C0 23.312.688 24 1.54 24H22.46C23.312 24 24 23.312 24 22.46V1.54C24 .688 23.312 0 22.453 0Z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    class="flex h-14 w-14 items-center justify-center rounded-xl bg-zinc-100 text-zinc-600 dark:bg-zinc-800/40 dark:text-zinc-300"
+                    href="#"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      data-alt="GitHub logo"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    class="flex h-14 w-14 items-center justify-center rounded-xl bg-zinc-100 text-zinc-600 dark:bg-zinc-800/40 dark:text-zinc-300"
+                    href="#"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      data-alt="X (formerly Twitter) logo"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="p-6 text-center">
+        <p class="text-xs text-slate-400 dark:text-slate-600">
+          © 2024 LucaDCZ. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
