@@ -3,8 +3,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
-
+    
     const projects = [
+        {
+            title: "Style Decor",
+            image:
+                "https://i.ibb.co.com/1t4tpd13/style-decor1.png",
+            details:
+                "Style Decor is a service-based web application where users can book home decor services online.ensuring transparency and smooth service delivery.",
+            Challenges: 'One of the major challenges was integrating the Stripe payment system securely and correctly handling payment confirmation. Managing role-based workflows between users, admins, and decorators, as well as updating service status step by step in real time, also required careful state management and backend logic.',
+            tech: ["React", "Node.js", "MongoDB", "Express",'firebase','Stripe','Tailwindcss'],
+          
+            githubLink: "https://github.com/jamal-uddin-asif/Style-Decor-Client",
+            liveLink: "https://style-decor123.netlify.app/"
+        },
         {
             title: "The Book Haven",
             image:
@@ -46,7 +58,6 @@ export default function Projects() {
             className="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200"
         >
             <div className="flex flex-col ">
-
                 <main className="flex-grow px-6 py-8">
                     <div className="space-y-12">
                         <section>

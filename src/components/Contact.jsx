@@ -19,10 +19,11 @@ export default function Contact() {
                 </div>
                 <div className="flex flex-1 flex-col items-center justify-center p-4">
                     <div className="flex w-full max-w-md flex-col items-center">
-                            <h1 className=" text-3xl text-primary mb-3">Contact me</h1>
+                        <h1 className=" text-3xl text-primary mb-3">Contact me</h1>
                         <div className="flex w-full flex-col gap-2">
-                            <div
-                                className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
+                            <a
+                                href="mailto:asifzehendmg@gmail.com"
+                                className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40 hover:bg-zinc-200 dark:hover:bg-zinc-700/40 transition-colors"
                             >
                                 <div className="flex items-center gap-4">
                                     <div
@@ -41,7 +42,7 @@ export default function Contact() {
                                         <p
                                             className="text-sm font-normal leading-normal line-clamp-2 text-zinc-500 dark:text-zinc-400"
                                         >
-                                           asifzehendmg@gmail.com
+                                            asifzehendmg@gmail.com
                                         </p>
                                     </div>
                                 </div>
@@ -54,9 +55,10 @@ export default function Contact() {
                                         >
                                     </div>
                                 </div>
-                            </div>
-                            <div
-                                className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
+                            </a>
+                            <a
+                                href="tel:01610990018"
+                                className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40 hover:bg-zinc-200 dark:hover:bg-zinc-700/40 transition-colors"
                             >
                                 <div className="flex items-center gap-4">
                                     <div
@@ -88,9 +90,12 @@ export default function Contact() {
                                         >
                                     </div>
                                 </div>
-                            </div>
-                            <div
-                                className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40"
+                            </a>
+                            <a
+                                href="https://wa.me/8801610990018"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between rounded-xl bg-zinc-100 dark:bg-zinc-800/40 hover:bg-zinc-200 dark:hover:bg-zinc-700/40 transition-colors"
                             >
                                 <div className="flex items-center gap-4">
                                     <div
@@ -129,7 +134,7 @@ export default function Contact() {
                                         >
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <h4
                             className="py-6 text-sm font-bold leading-normal tracking-[0.015em] text-center text-zinc-500 dark:text-zinc-400"
@@ -169,7 +174,7 @@ export default function Contact() {
                                     ></path>
                                 </svg>
                             </a>
-                       
+
                         </div>
                     </div>
                 </div>
