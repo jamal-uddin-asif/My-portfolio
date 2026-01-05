@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaFigma, FaNodeJs } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiVercel, SiMongodb, SiExpress } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiVercel, SiMongodb, SiExpress, SiFirebase, SiNetlify, SiStripe } from "react-icons/si";
 import Education from "./education";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -36,6 +36,9 @@ export default function About() {
                 { name: "GitHub", icon: <FaGithub className="text-black dark:text-white" /> },
                 { name: "Figma", icon: <FaFigma className="text-purple-500" /> },
                 { name: "Vercel", icon: <SiVercel className="text-black dark:text-white" /> },
+                { name: "Netlify", icon: <SiNetlify className="text-teal-500" /> },
+                { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
+                { name: "Stripe", icon: <SiStripe className="text-indigo-500" /> },
             ],
         },
     ];
