@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import img from "../assets/myPhoto.jpg";
+import img from "../assets/My_Professonal_photo.png";
 import gsap from "gsap";
 
 export default function Hero() {
@@ -76,12 +76,12 @@ export default function Hero() {
         >
           Download Resume
         </a>
-        {/* <a
+        <a
                     className="w-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold py-3 px-6 rounded-lg shadow-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                     href="#"
                 >
                     Browse Projects
-                </a> */}
+                </a>
       </motion.div>
     </div>
   );
