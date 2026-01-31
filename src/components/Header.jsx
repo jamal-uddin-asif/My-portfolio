@@ -5,7 +5,7 @@ import { HiMenuAlt3, HiX, HiMoon, HiSun } from "react-icons/hi"; // Install reac
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
     const { scrollYProgress } = useScroll();
 
     // Theme Logic
@@ -32,7 +32,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
+            className={`fixed   top-0 left-0 right-0 z-[100] transition-all duration-500 ${
                 scrolled 
                 ? "bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-lg py-3" 
                 : "bg-transparent py-6"

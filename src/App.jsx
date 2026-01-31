@@ -9,10 +9,10 @@ import Container from "./components/Container";
 
 function App() {
   return (
-    <Container>
+
       <div id="home" className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow flex flex-col justify-center px-6">
+        <main className="flex-grow flex flex-col justify-center ">
           <div className="mt-20">
             <Hero />
           </div>
@@ -23,7 +23,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Container>
+  
   );
 }
 
