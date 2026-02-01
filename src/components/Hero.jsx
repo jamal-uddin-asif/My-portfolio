@@ -79,8 +79,7 @@ export default function Hero() {
 
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black text-slate-900 dark:text-white leading-[1.1] mb-6">
                 Building Digital <br />
-                {/* MERN Stack
-             Developer */}
+           
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-500 to-cyan-400">
                   Masterpieces
                 </span>
