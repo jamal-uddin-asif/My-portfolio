@@ -164,7 +164,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Education Card */}
+      
           <div className="mb-24">
             <Education />
           </div>
