@@ -13,7 +13,19 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
-    const [darkMode, setDarkMode] = useState(true); 
+    const [darkMode, setDarkMode] = useState(localStorage.getItem('theme') || 'light'); 
+
+     // Theme Toggle Logic
+    useEffect(() => {
+        localStorage.setItem('theme', darkMode)
+        if (darkMode === 'dark') document.documentElement.classList.add(darkMode);
+        else document.documentElement.classList.remove('dark');
+    }, [darkMode]);
+
+    const handleToggle = () => {
+       setDarkMode(prev=> prev == 'dark'? 'light': 'dark')
+    }
+
 
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
@@ -44,11 +56,7 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Theme Toggle Logic
-    useEffect(() => {
-        if (darkMode) document.documentElement.classList.add('dark');
-        else document.documentElement.classList.remove('dark');
-    }, [darkMode]);
+   
 
     return (
         <header
@@ -93,7 +101,7 @@ export default function Header() {
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className={`relative ${darkMode && 'text-white'} px-5 py-2 text-xs uppercase tracking-widest font-bold transition-all duration-300 rounded-full ${
+                                    className={`relative ${darkMode === 'dark' && 'text-white'} px-5 py-2 text-xs uppercase tracking-widest font-bold transition-all duration-300 rounded-full ${
                                         isActive ? "text-black" : "text-slate-400 dark:text-slate-400 hover:text-primary"
                                     }`}
                                 >
@@ -113,7 +121,7 @@ export default function Header() {
                     <div className="h-8 w-[1px] bg-slate-200 dark:bg-white/10 mx-2" />
 
                     <button 
-                        onClick={() => setDarkMode(!darkMode)}
+                        onClick={handleToggle}
                         className="p-3 rounded-full hover:bg-slate-100 dark:hover:bg-white/5 text-slate-900 dark:text-yellow-400 transition-all active:scale-90"
                     >
                         {darkMode ? <HiSun size={22} /> : <HiMoon size={22} />}
