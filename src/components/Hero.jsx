@@ -14,7 +14,7 @@ export default function Hero() {
       icon: <FaGithub />,
       link: "https://github.com/jamal-uddin-asif",
     },
-    { icon: <FaLinkedin />, link: "#" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/asif-jamaluddin/" },
     {
       icon: <FaFacebook />,
       link: "https://www.facebook.com/asifzehendmg",
@@ -99,7 +99,7 @@ export default function Hero() {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/Jamal-Uddin-Resume.pdf"
+                  href="/Jamal_Uddin_Dev_Resume.pdf"
                   className="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-[0_10px_20px_rgba(var(--primary-rgb),0.3)] hover:shadow-primary/40 transition-all text-center"
                 >
                   Download Resume

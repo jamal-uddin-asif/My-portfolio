@@ -119,7 +119,7 @@ export default function Projects() {
                                         onClick={() => setSelectedProject(project)}
                                         className="w-full py-4 rounded-xl border-2 border-primary/20 hover:border-primary hover:bg-primary hover:text-white text-primary font-bold transition-all duration-300"
                                     >
-                                        View Case Study
+                                        View Project
                                     </button>
                                 </div>
                             </motion.div>
