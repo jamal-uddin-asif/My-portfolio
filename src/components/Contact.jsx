@@ -10,13 +10,13 @@ import {
 } from "react-icons/fa";
 import Container from "./Container";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser"; // npm i @emailjs/browser install kore nite hobe
+import emailjs from "@emailjs/browser"; // 
 
 export default function Contact() {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  console.log(import.meta.env.VITE_SERVICE_ID);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
